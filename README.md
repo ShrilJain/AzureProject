@@ -22,16 +22,28 @@ This project demonstrates a complete end-to-end **data pipeline solution** using
 
 ## 🛠️ Tools & Technologies
 
-| Tool | Purpose |
-|------|---------|
-| **Azure Data Lake Storage (ADLS)** | Cloud-based data storage |
-| **Azure Databricks** | Data transformation and PySpark processing |
-| **Azure Data Factory (ADF)** | Pipeline orchestration and automation |
-| **Azure Key Vault** | Credential management |
-| **GitHub** | Version control and project tracking |
+| Tool                        | Purpose                                      |
+|----------------------------|----------------------------------------------|
+| **Azure Data Lake Storage (ADLS)** | Cloud-based data storage             |
+| **Azure Databricks**       | Data transformation and PySpark processing   |
+| **Azure Data Factory (ADF)** | Pipeline orchestration and automation      |
+| **Azure Key Vault**        | Credential management                        |
+| **Power BI**               | Data visualization and reporting             |
+| **GitHub**                 | Version control and project tracking         |
+
 
 ---
 
 ## 📂 Project Structure (in Databricks)
 
+| 📂 Folder    | 📄 Contents / Purpose                                                               |
+| ------------ | ----------------------------------------------------------------------------------- |
+| `analysis/`  | Contains data analysis and visualization notebooks               |
+| `demo/`      | Contains SQL and Delta Lake demo notebooks (e.g., `filter_demo`, `join_demo`, etc.) |
+| `includes/`  | Utility notebooks like `common_functions` and `configuration`                       |
+| `ingestion/` | Data ingestion logic (used to bring raw from ADLS into Databricks) |
+| `raw/`       |Contains notebook to create Tables like f1_raw.drivers from JSON files using schema-on-read (e.g., create_raw_tables) |
+| `set-up/`    | Setup notebooks for configuring ADLS access (access keys, SAS, service principal)   |
+| `trans/`     | Transformation logic like `race_results`, `driver_standings`, `calc_race_results`   |
+| `utils/`     | Likely contains helper functions or reusable code modules                           |
 
